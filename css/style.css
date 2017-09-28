@@ -1,0 +1,481 @@
+html{
+	font-size: 100px;
+}
+.long{
+	width: 100%;
+	height: 11.5rem;
+	/*background: lightgreen;*/
+}
+.active{
+	background-color: lightgreen;
+	color: red;
+}
+
+/*body{
+	display: flex;
+	display: -webkit-flex;
+}*/
+header{
+	width: 100%;
+	height: 0.8rem;
+	background: rgb(255,47,50);
+	position: fixed;
+	z-index: 100;
+}
+header>section{
+	height: 75%;
+	width: 80%;
+	border-radius: 0.4rem;
+	position: absolute;
+	top:0.1rem;
+	left:0.5rem;
+	background: #fff;
+}
+header>section>input{
+	position: absolute;
+	left:1.63rem;
+	height: 80%;
+	top: 0.1rem;
+	width: 70%;
+	border: none;
+	font-size: 0.36rem;
+}
+header>p{
+	position: absolute;
+	color: red;
+	font: 0.6rem/0.8rem "微软雅黑";
+	top: 0.01rem;
+	left: 0.7rem;
+}
+header>i{
+	transform: scale(0.4);
+	position: absolute;
+	top: -0.09rem;
+	left: 1.4rem;
+	opacity: 0.3;
+}
+header>a{
+	color: #fff;
+	font:0.35rem/0.77rem "微软雅黑";
+	position: absolute;
+	right: 0.3rem;
+}
+/*******footer********/
+footer{
+	height: 1.8rem;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background: gray;
+}
+footer>ul{
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	display: flex;
+}
+footer>ul>li{
+	flex: 1;
+	text-align: center;
+	position: relative;
+	border-top: solid 1px red;
+}
+footer>ul>li{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+footer>ul>li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+footer>ul>li>a>span{
+	text-align: center;
+	/*color: #777;*/
+}
+footer>ul>li>a>p{
+	font-size: 0.35rem;
+	line-height: 0.3rem;
+	text-align: center;
+	font-weight:bold;
+	/*color: #777;*/
+}
+a{
+	color: #777;
+}
+/*footer>ul>li>i.icon-tuijian{
+	font-size: 0.7rem;
+}*/
+/*******section_sec1********/
+@keyframes dn{
+	from{opacity: 1;}
+	to{opacity: 0.3;}
+}
+@keyframes db{
+	from{opacity: 0.3;}
+	to{opacity: 1;}
+}
+.bg{
+	background: url(../img/banner3.jpg) no-repeat;
+	background-size: cover;
+}
+.db{
+	animation: db 1.5s;
+	display: block;
+}
+.dn{
+	animation: dn 1.5s;
+	/*db();*/
+	display: none;
+	
+}
+section{
+	width: 100%;
+	height: 4.8rem;
+	/*background: url(../img/banner1.jpg) no-repeat;*/
+	background-size: cover;
+}
+section>banner{
+	width: 100%;
+	height: 4.4rem;
+	overflow: hidden;
+	position: relative;
+}
+section>banner>ol{
+	/*width: 100%;
+	height: 4.4rem;*/
+	width: 4.2rem;
+	height: 0.4rem;
+	position: relative;
+	top: 4.2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 99;
+}
+section>banner>ol>li{
+	
+	float: left;
+	display: block;
+	border-radius: 60%;
+	width: 0.4rem;
+	height: 0.4rem;
+	background-color: grey;
+	margin-right: 0.12rem;
+	opacity: 0.8;
+}
+section>banner>ul{
+	width: 100%;
+	height: 4.4rem;
+	position: relative;
+	/*z-index: 5;*/
+}
+section>banner>ul>li{
+	position: absolute;
+	display: none;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+section>banner>ul>li>img{
+	width: 100%;
+
+	/*height: 4.4rem;*/
+}
+/*section>banner>ol>li>img:first-of-type{
+	display: block;
+}*/
+
+
+
+/*******ul_ten********/
+body>ul{
+	width: 100%;
+	margin-top:0;
+	background: lightgreen;
+}
+body>ul>li{
+	width: 20%;
+	height: 2rem;
+	float: left;
+	box-sizing: border-box;
+}
+body>ul>li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	/*background: red;*/
+	background: rgb(243,243,243);
+}
+body>ul>li>a>span>img{
+	width: 40%;
+	height: 40%;
+	margin-left: 30%;
+	margin-top:25%;
+}
+body>ul>li>a>p{
+	/*position: absolute;
+	top: 0;*/
+	/*z-index: 9999;*/
+	text-align: center;
+	font: 30px/20px "微软雅黑";
+	color: #333;
+}
+/**********img1**********/
+body>.a1{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+body>.a1>img{
+	width: 100%;
+	display: block;
+	height: 100%;
+}
+/***********span************/
+.sec2{
+	height: 1rem;
+	width: 100%;
+	background: rgb(243,243,243);
+}
+body>section>span{
+	display: block;
+	width: 90%;
+	height: 0.7rem;
+	margin-left:5%;
+	background: #fff;
+	border-radius: 5%;
+}
+body>section>span>a,body>section>span>img,body>section>span>span{
+	float: left;
+}
+body>section>span>img{
+	margin-left: 2%;
+	width: 20%;
+	height: 60%;
+	margin-top: 1.5%;
+}
+body>section>span>span{
+	font-size: 0.4rem;
+	line-height: 0.7rem;
+	margin-left: 2%;
+	color: red;
+}
+body>section>span>a{
+	font-size: 0.4rem;
+	line-height: 0.7rem;
+	margin-left: 2%;
+	color: lightgreen; 
+}
+body>section>span> .more{
+	font-size: 0.4rem;
+	margin-top: 0.15rem;
+	line-height: 0.4rem;
+	margin-left: 14%;
+	color: black; 
+	border-left: solid 1px grey;
+}
+/***********sec_scroll************/
+.sec_scroll{
+	width: 100%;
+
+}
+.sec_scroll .top{
+	width: 100%;
+	height: 1rem;
+}
+.sec_scroll .top img{
+	width: 20%;
+	height: 0.9rem;
+	margin-top: 0.05rem;
+	float: left;
+}
+.sec_scroll .top strong{
+	font-size: 0.45rem;
+	line-height: 1rem;
+	margin-left: 3%;
+	float: left;
+}
+.sec_scroll .top section{
+	float: left;
+	width: 20%;
+	height: 1rem;
+	font-size: 0.4rem;
+	line-height: 1rem;
+	margin-left: 3%;
+}
+.sec_scroll .top a{
+	float: left;
+	display: block;
+	width: 30%;
+	height: 1rem;
+	font-size: 0.35rem;
+	line-height: 1rem;
+	margin-left: 10%;
+	color: red;
+}
+.sec_scroll .sec4{
+	width: 100%;
+	height: 4.2rem;
+	overflow: scroll;	
+}
+.sec_scroll .sec4 ul{
+	width: 27.6rem;
+	height: 4.2rem;
+}
+.sec_scroll .sec4 ul li{
+	width: 2.4rem;
+	height: 2.4rem;
+	padding: 0.1rem 0.3rem;
+	float: left;
+	border-right: solid 1px #eee;
+}
+.sec_scroll .sec4 ul li img{
+	width: 2.4rem;
+	height: 2.4rem;
+	display: block;
+}
+.sec_scroll .sec4 ul li>strong{
+	margin-left: 0.45rem;
+	font-size: 0.6rem;
+	line-height: 0.3rem;
+	color: red;
+	text-align: center;
+}
+.sec_scroll .sec4 ul li>p{
+	font-size: 0.45rem;
+	line-height: 0.3rem;
+	color: grey;
+	text-align: center;
+	text-decoration: line-through;
+}
+
+
+
+/***************img2**************/
+body>.a2{
+	display: block;
+	width: 100%;
+	height: 2.7rem;
+	margin-top: 0.4rem;
+	border-top: solid 1px #eee;
+}
+body>.a2>img{
+	width: 100%;
+	display: block;
+	margin-top: 0.2rem;
+	height: 2.5rem;
+}
+body>.sec5{
+	width: 100%;
+}
+body>.sec5>ul{
+	width: 100%;
+}
+body>.sec5>ul>li{
+	width: 50%;
+	float: left;
+	height: 2.75rem;
+}
+body>.sec5>ul>li>a{
+	display: block;
+	width: 100%;
+	height: 2.75rem;
+}
+body>.sec5>ul>li>a>img{
+	width: 100%;
+	height: 100%;
+}
+/*******************forgive*********************/
+.fuck{
+	width: 100%;
+}
+.fuck .left{
+	width: 40%;
+	float: left;
+	margin-top: 10%;
+}
+.fuck strong,.fuck span{
+	display: block;
+	text-align: center;
+	font-size: 0.2rem;
+	line-height: 0.3rem;
+}
+.fuck .low{
+	font-size: 0.25rem;
+	color: red;
+}
+.fuck .left span.mor1{
+	height: 0.3rem;
+	width: 60%;
+	margin-left: 20%;
+	background: rgb(149,45,255);
+	color: #fff;
+}
+.fuck span.mor2{
+	height: 0.3rem;
+	width: 40%;
+	margin-left: 30%;
+	background: rgb(149,45,255);
+	color: #fff;
+}
+.fuck .left span.mor3{
+	height: 0.3rem;
+	width: 30%;
+	margin-left: 35%;
+	background: rgb(149,45,255);
+	color: #fff;
+}
+.fuck strong{
+	/*color: red;*/
+	font-size: 0.4rem;
+	line-height: 0.5rem;
+}
+.fuck img{
+	width: 50%;
+	height: 90%;
+	float: right;
+	margin: 1% 5%;
+}
+.fuck .sml{
+	height: 4rem;
+}
+.fuck .sml img{
+	display: block;
+	width: 80%;
+	height: 70%;
+	margin: 0 10%;
+}
+.fuck>div{
+	float: left;
+	height: 2.5rem;
+	box-sizing: border-box;
+	border: solid 1px grey;
+}
+.fuck .mid{
+	width: 50%;
+}
+.fuck .sml{
+	width: 33.3%;
+}
+.fuck .big{
+	width: 100%;
+}
+.fuck .big .left{
+	width: 30%;
+	margin-top: 7%;
+}
+.fuck .big img{
+	height: 100%;
+	width: 70%;
+	margin: 0;
+}
+.fuck .mid .left{
+	width: 40%;
+	margin-top: 10%;
+} 
+.fuck .mid img{
+	height: 100%;
+	width: 60%;
+	margin: 0;
+}
